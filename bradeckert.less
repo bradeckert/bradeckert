@@ -1,4 +1,16 @@
 /* LESS declarations go here */
+
+@font-face {
+    font-family: 'NothingYouCouldDo'; /*a name to be used later*/
+    src: url('/data/nothing_you_could_do/NothingYouCouldDoBold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Sanchez'; /*a name to be used later*/
+    src: url('/data/sanchez/Sanchezregular-ita.otf'); /*URL to font*/
+}
+
+
 body {
 	background-image: url('https://d2gpw04v015qcw.cloudfront.net/images/global/backgrounds/background.png');
 	cursor: default;
@@ -6,7 +18,7 @@ body {
 	position: relative;
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
-	font-family: "Fuller Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+	// font-family: "Fuller Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-rendering: optimizelegibility;
 	color: #8a9298;
 	font-style: normal;
@@ -37,8 +49,9 @@ body {
 
 	.name {
 		color: #2f3973;
-		font-size: 3em;
+		font-size: 2.3em;
 		padding-left: 2px;
+		font-family: 'NothingYouCouldDo';
 	}
 
 	.nav {
@@ -48,7 +61,7 @@ body {
 		.nav_text {
 			color: #a3d9d5;
 			font-size: 1.6em;
-			font-family: serif;
+			font-family: 'Sanchez';
 			padding-bottom: 4px;
 		}
 	}
@@ -77,6 +90,16 @@ body {
 				background-color: #303973;
 			}
 
+			#two {
+				background-image: url('/data/seersucker.png');
+				background-size: contain;
+			}
+
+			#three {
+				background-image: url('/data/dome.png');
+				background-size: contain;
+			}
+
 			#four {
 				background-color: #303973;
 			}
@@ -85,10 +108,16 @@ body {
 				background-color: #d1cfc5;
 				background-image: url('/data/santa-2.png');
 				background-repeat: no-repeat;
+				background-size: contain;
 			}
 
 			#six {
 				background-color: #a4d19d;
+			}
+
+			#seven {
+				background-image: url('/data/mountains.png');
+				background-size: contain;
 			}
 
 			#eight {
@@ -99,8 +128,18 @@ body {
 				background-color: #fff75e;
 			}
 
+			#ten {
+				background-image: url('/data/crumpled.png');
+				background-size: contain;
+			}
+
 			#eleven {
 				background-color: #a3d9d5;
+			}
+
+			#twelve {
+				background-image: url('/data/waves.png');
+				background-size: contain;
 			}
 
 		}
