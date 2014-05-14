@@ -1,0 +1,51 @@
+<head>
+  <title>Brad Eckert's Personal Website</title>
+</head>
+
+<body>
+<!-- dynamically filled in with iron-router -->
+</body>
+
+<template name="sidebar">
+	<div id="sidebar">
+		<div class="name">Bradley Eckert</div>
+		<div class="nav">
+			<div class="nav_text">about&nbsp;me</div>
+			<div class="nav_text">work</div>
+			<div class="nav_text">social</div>
+			<div class="nav_text">contact</div>
+		</div>
+  </div>
+</template>
+
+<template name="home">
+	<div class="container">
+		{{>sidebar}}
+		{{>home_content}}
+	</div>
+</template>
+
+<template name="home_content">
+	<div id="home_content">
+		<table id="grid">
+			<tr>
+				<td><div id="one"></div></td>
+				<td><div id="two"></div></td>
+				<td><div id="three"></div></td>
+				<td><div id="four"></div></td>
+			</tr>
+			<tr>
+				<td><div id="five"></div></td>
+				<td><div id="six"></div></td>
+				<td><div id="seven"></div></td>
+				<td><div id="eight"></div></td>
+			</tr>
+			<tr>
+				<td><div id="nine"></div></td>
+				<td><div id="ten"></div></td>
+				<td><div id="eleven"></div></td>
+				<td><div id="twelve"></div></td>
+			</tr>
+		</table>
+	</div>
+</template>
